@@ -1,0 +1,27 @@
+{
+  "applications": ["CallCenterBimani"],
+  "changelogDate": "20220411055417",
+  "clientRootFolder": "CallCenterBimani",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "ticketstatus",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "microserviceName": "CallCenterBimani",
+  "name": "Ticketstatus",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

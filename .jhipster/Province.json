@@ -1,0 +1,23 @@
+{
+  "applications": ["CallCenterBimani"],
+  "changelogDate": "20220411055917",
+  "clientRootFolder": "CallCenterBimani",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "province",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "microserviceName": "CallCenterBimani",
+  "name": "Province",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

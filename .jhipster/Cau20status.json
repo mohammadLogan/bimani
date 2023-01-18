@@ -1,0 +1,27 @@
+{
+  "applications": ["CallCenterBimani"],
+  "changelogDate": "20220411055517",
+  "clientRootFolder": "CallCenterBimani",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "cau_20_status",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "microserviceName": "CallCenterBimani",
+  "name": "Cau20status",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,31 @@
+{
+  "applications": ["CallCenterBimani"],
+  "changelogDate": "20220411054917",
+  "clientRootFolder": "CallCenterBimani",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "insurancecase",
+  "fields": [
+    {
+      "fieldName": "casenumber",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "occurdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "issuetracking",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "microserviceName": "CallCenterBimani",
+  "name": "Insurancecase",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,129 @@
+application {
+config {
+applicationType microservice
+authenticationType jwt
+baseName CallCenterBimani
+blueprints []
+buildTool maven
+cacheProvider no
+clientPackageManager npm
+creationTimestamp 1649655917872
+databaseType sql
+devDatabaseType postgresql
+dtoSuffix DTO
+enableHibernateCache false
+enableSwaggerCodegen true
+enableTranslation false
+jhiPrefix jhi
+jhipsterVersion "7.7.0"
+jwtSecretKey "Y2ZhZDdhNjAwNzAxOTE0MzZkZTc5YWI1YmJhOTdlMDQ2YzFlZTBmZmYzZTA3MjdhODVjM2VjMGMzMTJmYjcwOWRkZmE2NjNlZTViNjJkOWQ0YTlhNGFjZTY4MGRkZWRhOTZmMzNjNWIzZWJmMGE0NDM0MGFhYmZlZGUzYmQyNTE="
+languages [en,  fa]
+messageBroker false
+nativeLanguage en
+otherModules []
+packageName com.atlas.ir
+prodDatabaseType postgresql
+reactive false
+searchEngine false
+serverPort 8082
+serviceDiscoveryType false
+skipClient true
+skipUserManagement true
+testFrameworks []
+websocket false
+}
+entities *
+}
+
+entity Operator {
+
+name String ,
+surname String ,
+nationalid Long ,
+dateofbirth Instant ,
+status Status ,
+gender String 
+}
+enum Status {
+
+ONLINE, OFFLINE, BUSY
+}
+entity Customer {
+
+name String ,
+surname String ,
+nationalid Long ,
+dateofbirth Instant ,
+gender String 
+}
+entity Ticket {
+
+description String ,
+issuedate Instant ,
+lastmodifieddate Instant 
+}
+entity Insurancecase {
+
+casenumber Long ,
+occurdate Instant ,
+issuetracking String 
+}
+entity Caseaccidentu20 {
+
+date Instant 
+}
+entity Address {
+
+street String ,
+description String ,
+postalcode String 
+}
+entity Casetype {
+
+name String ,
+parenttype String 
+}
+entity Phone {
+
+number String ,
+phonetype String 
+}
+entity Ticketstatus {
+
+name String ,
+description String 
+}
+entity Cau20status {
+
+name String ,
+description String 
+}
+entity Repairshop {
+
+name String 
+}
+entity Tickethistory {
+
+description String ,
+date Instant 
+}
+entity City {
+
+name String 
+}
+entity Province {
+
+name String 
+}
+entity Addresstype {
+
+name String 
+}
+entity Insurance {
+
+name String 
+}
+dto all with mapstruct
+service all with serviceImpl
+filter all
+paginate all with pagination
